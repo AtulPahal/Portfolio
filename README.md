@@ -1,16 +1,62 @@
-# React + Vite
+# Atul Pahal | AI Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-end, cinematic digital portfolio showcasing engineering precision and minimalist design. Built with React and Vite, this portfolio explores the intersection of robust system architecture and fluid user interfaces.
 
-Currently, two official plugins are available:
+![Portfolio Favicon](public/favicon.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+- **Atmospheric Visuals**: Custom neural network particle sphere and interactive Penguin animation using Canvas API.
+- **Premium Interactions**: Advanced hover highlights and smooth transitions using modern CSS (cubic-bezier) and React state management.
+- **Dynamic Theming**: Integrated Dark/Light mode support with seamless transitions.
+- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop experiences.
+- **Interactive Terminal**: Clean, editorial-style layout inspired by modern design systems.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React, Vite, JavaScript (ES6+)
+- **Styling**: Vanilla CSS3 (Custom Variables, Flexbox/Grid, Keyframe Animations)
+- **Visuals**: Canvas API for particle systems and interactive animations.
+- **Tools**: ESLint for code quality, Git for version control.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Selected Projects
+
+- **Movie Recommendation System**: Intelligent engine analyzing user content similarities.
+- **Image Detection System**: Real-time object identification using deep learning.
+- **Spam Detection**: NLP-powered message classification.
+- **AI Crop Health Monitoring**: IoT and Computer Vision system for agricultural optimization.
+
+## 📦 Getting Started
+
+To run this project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AtulPahal/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+## 📫 Contact
+
+- **Email**: [atulpahal@gmail.com](mailto:atulpahal@gmail.com)
+- **LinkedIn**: [Atul Pahal](https://www.linkedin.com/in/atul-pahal-1275aa371/)
+- **X (Twitter)**: [@AtulPahal00](https://x.com/AtulPahal00)
+- **GitHub**: [@AtulPahal](https://github.com/AtulPahal)
+
+---
+Developed by **Atul Pahal** · 2026
