@@ -376,8 +376,33 @@ function App() {
   const [activeSection, setActiveSection] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showIntro, setShowIntro] = useState(true);
-  
+  const [roleText, setRoleText] = useState('');
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
   const footerRef = useRef(null);
+
+  const roles = ['AI Developer', 'AI Engineering', 'Web Developer'];
+
+  useEffect(() => {
+    const currentRole = roles[roleIndex];
+    let timeout;
+    if (!isDeleting) {
+      if (roleText.length < currentRole.length) {
+        timeout = setTimeout(() => setRoleText(currentRole.slice(0, roleText.length + 1)), 90);
+      } else {
+        timeout = setTimeout(() => setIsDeleting(true), 1600);
+      }
+    } else {
+      if (roleText.length > 0) {
+        timeout = setTimeout(() => setRoleText(roleText.slice(0, -1)), 50);
+      } else {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }
+    return () => clearTimeout(timeout);
+  }, [roleText, isDeleting, roleIndex]);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -560,8 +585,11 @@ function App() {
         </div>
         
         <div className="hero-content">
-          <h1>Hello, I'm Atul.</h1>
-          <p className="hero-subtitle">I engineer precise digital experiences. Bridging the gap between robust system architecture and fluid user interfaces with a focus on minimalist principles.</p>
+          <h1 className="hero-heading">
+            Hello, I'm<br />
+            <span className="role-typed">{roleText}<span className="cursor-blink">|</span></span>
+          </h1>
+          <p className="hero-subtitle">I build intelligent systems and precise digital experiences — bridging cutting-edge AI with fluid, modern web interfaces.</p>
           
           <div className="hero-actions">
             <a href="#work" onClick={(e) => handleSmoothScroll(e, 'work')} className="btn btn-primary">VIEW PROJECTS</a>
@@ -646,7 +674,7 @@ function App() {
             <p>I'm an AI Developer focused on building scalable, performant, and intelligent applications. I bridge the gap between complex algorithms and practical engineering, ensuring that technical execution matches creative intent.</p>
             
             <div className="about-actions">
-              <a href="/resuma.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">VIEW CV</a>
+              <a href="https://drive.google.com/file/d/1nOITjAweAxNANFJOT_e06o_zrxHM178e/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-primary">VIEW CV</a>
               <a href="https://github.com/AtulPahal" target="_blank" rel="noreferrer" className="btn btn-outline">GITHUB</a>
             </div>
           </div>
@@ -774,7 +802,7 @@ function App() {
         </div>
         <div className="footer-center">
           <a href="https://github.com/AtulPahal" target="_blank" rel="noreferrer">GITHUB</a>
-          <a href="/resuma.pdf" target="_blank" rel="noreferrer">READ CV</a>
+          <a href="https://drive.google.com/file/d/1nOITjAweAxNANFJOT_e06o_zrxHM178e/view?usp=sharing" target="_blank" rel="noreferrer">READ CV</a>
           <a href="https://x.com/AtulPahal00" target="_blank" rel="noreferrer">TWITTER</a>
         </div>
         <div className="footer-right" onClick={toggleSound} style={{ cursor: 'pointer', transition: 'color 0.3s' }} title="Toggle Sound">
