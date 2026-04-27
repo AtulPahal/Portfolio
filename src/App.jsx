@@ -674,7 +674,7 @@ function App() {
             <p>I'm an AI Developer focused on building scalable, performant, and intelligent applications. I bridge the gap between complex algorithms and practical engineering, ensuring that technical execution matches creative intent.</p>
             
             <div className="about-actions">
-              <a href="https://drive.google.com/file/d/1nOITjAweAxNANFJOT_e06o_zrxHM178e/view?usp=sharing" target="_blank" rel="noreferrer" className="btn btn-primary">VIEW CV</a>
+              <a href="/resuma.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">VIEW CV</a>
               <a href="https://github.com/AtulPahal" target="_blank" rel="noreferrer" className="btn btn-outline">GITHUB</a>
             </div>
           </div>
@@ -802,7 +802,7 @@ function App() {
         </div>
         <div className="footer-center">
           <a href="https://github.com/AtulPahal" target="_blank" rel="noreferrer">GITHUB</a>
-          <a href="https://drive.google.com/file/d/1nOITjAweAxNANFJOT_e06o_zrxHM178e/view?usp=sharing" target="_blank" rel="noreferrer">READ CV</a>
+          <a href="/resuma.pdf" target="_blank" rel="noreferrer">READ CV</a>
           <a href="https://x.com/AtulPahal00" target="_blank" rel="noreferrer">TWITTER</a>
         </div>
         <div className="footer-right" onClick={toggleSound} style={{ cursor: 'pointer', transition: 'color 0.3s' }} title="Toggle Sound">
