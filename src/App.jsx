@@ -382,7 +382,7 @@ function App() {
 
   const footerRef = useRef(null);
 
-  const roles = ['AI Developer', 'AI Engineering', 'Web Developer'];
+  const roles = ['Data Scientist', 'AI Engineering', 'Web Developer'];
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -521,7 +521,7 @@ function App() {
         <div className="intro-overlay" onClick={handleEnter}>
           <div className="intro-content">
             <div className="intro-logo">Atul</div>
-            <p className="intro-sub">Atul Pahal · AI Developer</p>
+            <p className="intro-sub">Atul Pahal · Data Scientist</p>
             <button className="intro-btn">
               <span className="intro-btn-dot"></span>
               ENTER SITE
@@ -671,7 +671,7 @@ function App() {
         <div className="about-grid">
           <div className="about-text">
             <h2>Engineering precise digital experiences.</h2>
-            <p>I'm an AI Developer focused on building scalable, performant, and intelligent applications. I bridge the gap between complex algorithms and practical engineering, ensuring that technical execution matches creative intent.</p>
+            <p>I'm a Data Scientist focused on building scalable, performant, and intelligent applications. I bridge the gap between complex algorithms and practical engineering, ensuring that technical execution matches creative intent.</p>
             
             <div className="about-actions">
               <a href="/resuma.pdf" target="_blank" rel="noreferrer" className="btn btn-primary">VIEW CV</a>
